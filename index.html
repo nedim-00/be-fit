@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>BeFit</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">Be<span>Fit</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="img/bars.png" alt="Open navigation">
+            <nav>
+                <img id="mobile-close" class="mobile-menu-close" src="img/close.svg" alt="Close navigations">
+                
+                <ul class="primary-nav">
+                    <li class="current increase"><a href="index.html">Home</a></li>
+                    <li class="increase"><a href="about.html">About us</a></li>
+                    <li class="increase"><a href="membership.html">Membership</a></li>
+                    <li class="increase"><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li class="mobile-number"><a href="#">Be Strong</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="main">
+        <div class="container">
+            <div class="left-col">
+
+                <p class="subhead">Are you ready to</p>
+                <h1><span id="text"></span></h1>
+                <h2 class="h2-class">To enroll in our program, visit:</h2>
+                <a href="membership.html" class="primary-cta">Sign Up</a>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="membership">
+        <div class="container-membership">
+            <h2>Membership for everyone</h2>
+            <blockquote>“The greatest wealth is health." - Virgil</blockquote>
+
+            <div class="carousel" data-flickity='{ "wrapAround": true , "autoPlay":true, "cellSelector": ".carousel-cell"}'>
+                <div class="static-banner"><a href="membership.html">Join us</a></div>
+                <div class="carousel-cell" style="background-image: url(img/c1.jpg); background-size: cover;"></div>
+                <div class="carousel-cell" style="background-image: url(img/c2.jpg); background-size: cover;"></div>
+                <div class="carousel-cell" style="background-image: url(img/c3.jpg); background-size: cover;"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="calculate-bmi">
+        <div class="container">
+            <div class="bmi-box">
+
+                <h2>Calculate your BMI</h2>
+                <div class="input-values">
+                    <span class="bmi-text">Height:</span><input type="text" name="" id="height"><br>
+                    <span class="bmi-text">Weight:</span><input type="text" name="" id="weight"><br>
+                </div>
+
+                <input readonly type="text" name="" id="result" placeholder="Result">
+                <button id="submit-bmi" onclick="calculate()">Submit</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-elements">
+            <div class="about-el">
+                <h3>About us</h3>
+                <p class="gray-text">BeFit is a new destination for training, relaxation and a healthy lifestyle. 
+                                     Modernly equipped ambience, designed as an oasis of everyday obligations, 
+                                     offers a unique experience of fitness, whether it is a group or individual 
+                                     training</p>
+            </div>
+            <div class="contact-el">
+                <h3>Contact us</h3>
+                <address class="gray-text" >Address: Franz Lehar 2, 71000 Sarajevo, BiH</address>
+                <p>+387 61-123-123</p>
+            </div>
+            <div class="news-el">
+                <h3>Do you want to receive news?</h3>
+                <p class="gray-text">Don't worry, we won't send any spam messages...</p>
+                <input type="email" placeholder="Your e-mail address"><button>Send</button>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="sign">
+                <p>Copyright &copy;2021 BeFit d.o.o. Sarajevo</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="js/calculate.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/type.js"></script>
+    
+</body>
+</html>

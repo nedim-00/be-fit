@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="src/lightbox.min.css">
+    <title>BeFit - Membership</title>
+
+</head>
+<body>
+
+
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">Be<span>Fit</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="img/bars.png" alt="Open navigation">
+            <nav>
+                <img id="mobile-close" class="mobile-menu-close" src="img/close.svg" alt="Close navigations">
+                
+                <ul class="primary-nav">
+                    <li class="increase"><a href="index.html">Home</a></li>
+                    <li class="increase"><a href="about.html">About us</a></li>
+                    <li class="increase current"><a href="membership.html">Membership</a></li>
+                    <li class="increase"><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li class="mobile-number"><a href="#">Be Strong</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="feautures">
+        <div class="container">
+            <div class="feautures-heading">
+                <h2>Calculate and submit your form</h2>
+            </div>
+            <form action="">
+                <div class="form">
+                    <div class="left-side">
+                        <input type="text" placeholder="Name" required id="name" minlength="3"><br>
+                        <input type="text" placeholder="Surname" required id="surname" minlength="5"><br>
+                        <input type="text" placeholder="Age" required id="age"><br>
+                        <input type="text" placeholder="Gender" required id="gender" ><br>
+                        <input type="text" placeholder="City" id="city" ><br>
+                        <select name="package" id="package" required>
+                            <option value="" disabled selected style="color: rgb(158, 158, 158);">Choose your package</option>
+                            <option value="monthly">Monthly package</option>
+                            <option value="3x">3x a week package</option>
+                            <option value="half">1/2 of month package</option>
+                            <option value="daily">One day package</option>
+                            <option value="student">Student package</option>
+                            <option value="group">Group package</option>
+                            <option value="senior">Senior package</option>
+                        </select><br>
+                        <textarea id="addinfo" name="additional-info" rows="4" cols="50" placeholder="Additional Information" minlength="10"></textarea><br>
+                        
+                        <div class="final-section">
+                            <textarea name="price" class="f-input" id="price-info" cols="30" rows="10"></textarea>
+                            <!-- <input type="text" class="f-input" id="price-info"> -->
+                            <div class="space"></div>
+                            
+                            <div class="button-flex">
+                                <label class="f-button" onclick="price();">Calculate</label>
+                                <button class="f-button" id="submitBtn" type="submit">Submit</button>                                    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="signing-image">
+                        <img src="img/signing.jpg" alt="">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-elements">
+            <div class="about-el">
+                <h3>About us</h3>
+                <p class="gray-text">BeFit is a new destination for training, relaxation and a healthy lifestyle. 
+                                     Modernly equipped ambience, designed as an oasis of everyday obligations, 
+                                     offers a unique experience of fitness, whether it is a group or individual 
+                                     training</p>
+            </div>
+            <div class="contact-el">
+                <h3>Contact us</h3>
+                <address class="gray-text" >Address: Franz Lehar 2, 71000 Sarajevo, BiH</address>
+                <p>+387 61-123-123</p>
+            </div>
+            <div class="news-el">
+                <h3>Do you want to receive news?</h3>
+                <p class="gray-text">Don't worry, we won't send any spam messages...</p>
+                <input type="email" placeholder="Your e-mail address"><button>Send</button>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="sign">
+                <p>Copyright &copy;2021 BeFit d.o.o. Sarajevo</p>
+            </div>
+ 
+ 
+        </div>
+
+    </div>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/price.js"></script>
+    <script src="js/membership.js"></script>
+</body>
+</html>
